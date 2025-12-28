@@ -22,8 +22,8 @@ jobs:
           cd test
           cat new.txt
 
-      - name: Install PM2
-        uses: victorargento/pm2-deployment@main
+      # - name: Install PM2
+      #   uses: victorargento/pm2-deployment@main
 
       - name: Install NodeJS
         uses: actions/setup-node@v5
