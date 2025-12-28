@@ -20,8 +20,12 @@ jobs:
       - name: Open folder test
         run: cd test
 
-      - name: Read the file
-        run: cat new.txt
+      - name: Print the child file
+        run: |
+            ls 
+            pwd
+            cat new.txt
+
 
 
 
