@@ -1,0 +1,17 @@
+name: First CI CD Pipeline
+
+on:
+    push:
+        branches:
+            - main
+
+
+jobs:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Git Clone
+        uses: actions/checkout@v2
+        - name: Read the txt read_the_file
+        run: cat hello.txt
+
+
