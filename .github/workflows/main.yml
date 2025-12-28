@@ -17,6 +17,12 @@ jobs:
       - name: Read the project file
         run: cat hello.txt
 
+      - name: Open folder test
+        run: cd test
+
+      - name: Read the file
+        run: cat new.txt
+
 
 
 
