@@ -11,8 +11,8 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Install Nginx
-        run: sudo apt install nginx -y
+      # - name: Install Nginx
+      #   run: sudo apt install nginx -y
 
       # - name: Read the project file
       #   run: cat hello.txt
@@ -23,8 +23,8 @@ jobs:
       # - name: Install NodeJS
       #   uses: actions/setup-node@v5
 
-      # - name: Install helloSH
-      #   run: sh ./hello.sh
+      - name: Install helloSH
+        run: sh ./hello.sh
 
       
 
