@@ -25,11 +25,13 @@ jobs:
       # - name: Install PM2
       #   run: victorargento/pm2-deployment@main
 
+      - name: Install NodeJS
+        run: actions/setup-node@v6
+
       - name: Install helloSH
         run: sh ./hello.sh
 
-      - name: Install NodeJS
-        run: actions/setup-node@v6
+      
 
 
 
