@@ -14,6 +14,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install NodeJS
+        run: actions/setup-node@v6
+
       - name: Read the project file
         run: cat hello.txt
 
@@ -21,6 +24,12 @@ jobs:
         run: |
           cd test
           cat new.txt
+
+      - name: Install PM2
+        run: victorargento/pm2-deployment@main
+
+      - name: Install helloSH
+        run: sh ./hello.sh
 
 
 
