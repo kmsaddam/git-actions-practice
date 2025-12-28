@@ -17,14 +17,11 @@ jobs:
       - name: Read the project file
         run: cat hello.txt
 
-      - name: Open folder test
-        run: cd test
-
-      - name: Print the child file
+      - name: Open folder and read the file
         run: |
-            ls 
-            pwd
-            cat new.txt
+          cd test
+          cat new.txt
+
 
 
 
